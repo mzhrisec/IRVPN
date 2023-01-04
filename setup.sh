@@ -22,6 +22,8 @@ read ip ;
 
 cd
 
+rm -rf OOB-Server
+
 echo "installing xui...."
 echo "Enter panel username"
 echo "Enter panel password"
@@ -38,7 +40,7 @@ sudo apt install shadowsocks-libev nginx
 
 pip install certbot-nginx
 
-echo -e "Enter Your email to enumerate subdomains:- " ;
+echo -e "Enter Your email " ;
 read email ;
 
 sudo certbot --rsa-key-size 4096 --nginx  --agree-tos  -m $email --no-eff-email
