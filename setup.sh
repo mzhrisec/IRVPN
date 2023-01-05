@@ -8,21 +8,6 @@ apt install -y jq
 apt install -y build-essential libssl-dev libffi-dev python-dev
 apt install -y python3-pip 
 
-git clone https://github.com/Voorivex/OOB-Server.git
-
-cd OOB-Server
-
-echo -e "Enter Your domain" ;
-read domain ;
-
-echo -e "Enter Your ip" ;
-read ip ;
-
-./setup $domain $pip
-
-cd
-
-rm -rf OOB-Server
 
 echo "installing xui...."
 echo "Enter panel username"
